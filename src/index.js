@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+//?IMPORTO BOOTSTRAP
+import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
   //^ OLTRE A FARE DA CONTENITORE, VERIFICA CHE I COMPONENTI AL SUO INTERNO SEGUANDO LE BEST PRACTICES
