@@ -3,10 +3,17 @@
 //? I FILE SI IMPORTANO COSI, COME SU VUE.JS
 import './App.css';
 import Navbar from './components/navbar';
+import Card from './components/card';
 
 function App() {
   return (
-    <Navbar />
+    <>
+      {/* //^SE VOGLIO METTERE PIU TAGS ACCANTO DEVO RACCHIUDERLI NEL FRAGMENT JSX ( <> </> )*/}
+      <Navbar />
+      <div className="row">
+        <Card />
+      </div>
+    </>
   );
 }
 
