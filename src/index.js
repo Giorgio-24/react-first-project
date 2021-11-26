@@ -11,6 +11,7 @@ ReactDOM.render(
   //^ DI REACT, METTENDO IN LUCE EVENTUALI PROBLEMI
   <React.StrictMode>
     <App />
+
   </React.StrictMode>,
   document.getElementById('root')
 );
