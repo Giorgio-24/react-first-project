@@ -10,8 +10,10 @@ function App() {
     <>
       {/* //^SE VOGLIO METTERE PIU TAGS ACCANTO DEVO RACCHIUDERLI NEL FRAGMENT JSX ( <> </> )*/}
       <Navbar />
-      <div className="row">
-        <Card />
+      <div className="container mt-5">
+        <div className="row">
+          <Card />
+        </div>
       </div>
     </>
   );
