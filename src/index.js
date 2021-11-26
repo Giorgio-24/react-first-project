@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
+  //^ OLTRE A FARE DA CONTENITORE, VERIFICA CHE I COMPONENTI AL SUO INTERNO SEGUANDO LE BEST PRACTICES
+  //^ DI REACT, METTENDO IN LUCE EVENTUALI PROBLEMI
   <React.StrictMode>
     <App />
   </React.StrictMode>,
