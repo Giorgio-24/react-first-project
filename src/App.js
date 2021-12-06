@@ -26,6 +26,14 @@ class App extends Component {
     ]
   }
 
+  handleDelete = cardId => {
+    const updatedCards = this.state.cards.filter(card => card.id !== cardId);
+
+    //^ SI PUO' AGGIORNARE LO STATE DEI COMPONENTI REACT SOLO MEDIANTE LA FUNZIONE SETSTATE() 
+    //^ CREANDO UN OGGETTO AL SUO INTERNO CON CHIAVE(OGGETTO DA MODIFICARE) : VALORE(NUOVO VALORE DI QUELL'OGGETTO)
+    this.setState({ cards: updatedCards });
+  }
+
   //^ FUNZIONE DI RENDER PER I CLASS COMPONENT
   render() {
     return (
@@ -38,10 +46,10 @@ class App extends Component {
             {this.state.cards.map(card => (
               <Card
                 key={card.id}
-                image={card.image}
-                name={card.name}
-                price={card.price}
-                quantity={card.quantity} />
+                onDelete={this.handleDelete}
+                card={card}
+              //^LI PASSO IL PROP PER SCATENARE LA FUNZIONE
+              />
             ))}
           </div>
         </div>
